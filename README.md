@@ -4,7 +4,7 @@ Simple Mario moves.
 
 try out!
 
-[http://knottx.github.io/mario-flutter/](http://knottx.github.io/mario-flutter/)
+[https://knottx.github.io/mario-flutter/](https://knottx.github.io/mario-flutter/)
 
 
 ### Screenshot
