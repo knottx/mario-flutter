@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
@@ -86,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 color: Colors.brown,
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 48,
+                  horizontal: 32,
                   vertical: 48,
                 ),
                 child: SafeArea(
@@ -126,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         //         size: 64,
                         //       ),
                         //     ),
-                        //     const SizedBox(width: 48),
+                        //     const SizedBox(width: 32),
                         //     IconButton.filledTonal(
                         //       onPressed: _moveRight,
                         //       icon: const Icon(
@@ -144,7 +145,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             size: 64,
                           ),
                         ),
-                        const SizedBox(width: 48),
                       ],
                     ),
                   ),
@@ -156,13 +156,15 @@ class _MyHomePageState extends State<MyHomePage> {
             top: 16,
             left: 0,
             right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                _info(title: 'Mario', value: '0'),
-                _info(title: 'World', value: '1-1'),
-                _info(title: 'Time', value: '9999'),
-              ],
+            child: SafeArea(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  _info(title: 'Mario', value: '0'),
+                  _info(title: 'World', value: '1-1'),
+                  _info(title: 'Time', value: '9999'),
+                ],
+              ),
             ),
           ),
         ],
